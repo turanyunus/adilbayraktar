@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { TrendingUp, Mic, Scale, X } from 'lucide-react'
+import { TrendingUp, Mic, Scale, X, Award, Users, Calendar, Globe, ArrowRight, Linkedin, Twitter, Mail } from 'lucide-react'
 import { ChoiceCard } from '@/components/ChoiceCard'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -130,6 +130,217 @@ export default function HomePage() {
                 onClick={() => handleChoiceClick(choice.path)}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="text-center"
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl mb-4">
+                  <Calendar className="w-8 h-8 text-primary-600" />
+                </div>
+                <div className="text-4xl font-bold text-gray-900 mb-2">10+</div>
+                <div className="text-gray-600">Years Experience</div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-center"
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl mb-4">
+                  <Users className="w-8 h-8 text-accent-600" />
+                </div>
+                <div className="text-4xl font-bold text-gray-900 mb-2">100+</div>
+                <div className="text-gray-600">Projects Completed</div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-center"
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl mb-4">
+                  <Mic className="w-8 h-8 text-primary-600" />
+                </div>
+                <div className="text-4xl font-bold text-gray-900 mb-2">50+</div>
+                <div className="text-gray-600">Speaking Events</div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-center"
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent-50 to-primary-50 rounded-xl mb-4">
+                  <Globe className="w-8 h-8 text-accent-600" />
+                </div>
+                <div className="text-4xl font-bold text-gray-900 mb-2">20+</div>
+                <div className="text-gray-600">Countries Reached</div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Communication, Voice, and Impact
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                I believe in the power of communication to create change. Whether it&apos;s helping a brand find its voice, 
+                speaking about the challenges and opportunities of our digital age, or working with communities fighting 
+                for their rights — I&apos;m driven by the potential of words and stories to move people to action.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Strategic Thinking</h3>
+                <p className="text-gray-600">
+                  Data-driven strategies that align with your goals and values.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-gradient-to-br from-accent-50 to-accent-100 rounded-lg flex items-center justify-center mb-4">
+                  <Award className="w-6 h-6 text-accent-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Proven Results</h3>
+                <p className="text-gray-600">
+                  Track record of successful campaigns and meaningful impact.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-50 to-accent-50 rounded-lg flex items-center justify-center mb-4">
+                  <Scale className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Values-Driven</h3>
+                <p className="text-gray-600">
+                  Work grounded in principles of justice, equality, and human rights.
+                </p>
+              </motion.div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                Learn More About Me
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Links & CTA */}
+      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Let&apos;s Connect
+              </h2>
+              <p className="text-xl text-primary-100 mb-8">
+                Follow my work, reach out for collaboration, or just say hello.
+              </p>
+              
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <a
+                  href="https://linkedin.com/in/adilbayraktar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all backdrop-blur-sm"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  LinkedIn
+                </a>
+                <a
+                  href="https://twitter.com/adilbayraktar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all backdrop-blur-sm"
+                >
+                  <Twitter className="w-5 h-5" />
+                  Twitter / X
+                </a>
+                <a
+                  href="mailto:hello@adilbayraktar.com"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all backdrop-blur-sm"
+                >
+                  <Mail className="w-5 h-5" />
+                  Email
+                </a>
+              </div>
+
+              <Link
+                href="/contact"
+                className="inline-block px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                Get in Touch
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

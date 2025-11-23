@@ -1,36 +1,49 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { Linkedin, Twitter, Mail, Send } from 'lucide-react'
+import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+  Linkedin,
+  Twitter,
+  Mail,
+  Send,
+  Clock,
+  CheckCircle,
+  MessageSquare,
+  Phone,
+} from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // In a real app, this would send to an API
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
+    console.log("Form submitted:", formData);
+    setSubmitted(true);
     setTimeout(() => {
-      setSubmitted(false)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 3000)
-  }
+      setSubmitted(false);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, 3000);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   return (
     <div className="min-h-screen py-20">
@@ -47,7 +60,7 @@ export default function ContactPage() {
               Let&apos;s Talk
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Have a project in mind? Want to collaborate? Just want to say hi? 
+              Have a project in mind? Want to collaborate? Just want to say hi?
               I&apos;d love to hear from you.
             </p>
           </motion.div>
@@ -61,7 +74,10 @@ export default function ContactPage() {
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -77,7 +93,10 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -93,7 +112,10 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     I&apos;m interested in...
                   </label>
                   <select
@@ -107,13 +129,18 @@ export default function ContactPage() {
                     <option value="">Select a topic</option>
                     <option value="social-media">Social Media Services</option>
                     <option value="speaking">Public Speaking / Event</option>
-                    <option value="human-rights">Human Rights Collaboration</option>
+                    <option value="human-rights">
+                      Human Rights Collaboration
+                    </option>
                     <option value="other">Something Else</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -204,11 +231,14 @@ export default function ContactPage() {
 
               {/* Response Time */}
               <div className="p-8 bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl border border-primary-100">
-                <h3 className="text-xl font-bold text-primary-700 mb-2">
-                  Response Time
-                </h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <Clock className="w-6 h-6 text-primary-600" />
+                  <h3 className="text-xl font-bold text-primary-700">
+                    Response Time
+                  </h3>
+                </div>
                 <p className="text-gray-600">
-                  I typically respond to inquiries within 1-2 business days. 
+                  I typically respond to inquiries within 1-2 business days.
                   Looking forward to connecting!
                 </p>
               </div>
@@ -216,7 +246,123 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </div>
-  )
-}
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600">
+                Quick answers to common questions
+              </p>
+            </motion.div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What types of projects do you take on?",
+                  a: "I work with a wide range of clients including tech startups, NGOs, media organizations, universities, and grassroots movements. Whether you need social media strategy, a speaker for your event, or a collaborator on human rights work, I&apos;d love to hear about your project.",
+                },
+                {
+                  q: "How do you approach new projects?",
+                  a: "Every project starts with understanding your goals, audience, and values. I believe in collaborative partnerships where we work together to create something meaningful and effective.",
+                },
+                {
+                  q: "Do you work with international clients?",
+                  a: "Yes! I&apos;ve worked with clients and spoken at events across Europe, the Middle East, and beyond. Remote collaboration is seamless, and I&apos;m happy to travel for speaking engagements.",
+                },
+                {
+                  q: "What&apos;s your typical response time?",
+                  a: "I aim to respond to all inquiries within 1-2 business days. For urgent matters, feel free to mention it in your message.",
+                },
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-all"
+                >
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 flex items-start gap-2">
+                    <MessageSquare className="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                    {faq.q}
+                  </h3>
+                  <p className="text-gray-600 ml-7">{faq.a}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Work Together */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Work Together?
+              </h2>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: CheckCircle,
+                  title: "Proven Results",
+                  description:
+                    "Track record of successful campaigns and meaningful impact across diverse projects.",
+                },
+                {
+                  icon: MessageSquare,
+                  title: "Clear Communication",
+                  description:
+                    "Transparent process with regular updates and collaborative decision-making.",
+                },
+                {
+                  icon: Clock,
+                  title: "Reliable & Timely",
+                  description:
+                    "Consistent delivery on time, every time. Your deadlines are my priorities.",
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="p-6 bg-gradient-to-br from-primary-50 to-white rounded-xl border border-primary-100 text-center"
+                >
+                  <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl mb-4">
+                    <item.icon className="w-7 h-7 text-primary-700" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
