@@ -105,7 +105,7 @@ export default function HomePage() {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 via-primary-700 to-gray-900 bg-clip-text text-transparent">
-                Hi, I'm Adil Bayraktar.
+                Hi, I&apos;m Adil Bayraktar.
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-4">

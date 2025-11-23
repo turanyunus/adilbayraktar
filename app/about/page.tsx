@@ -41,7 +41,7 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="text-xl text-gray-600">
-              I'm Adil Bayraktar, working at the intersection of communication, public voice, and human rights.
+              I&apos;m Adil Bayraktar, working at the intersection of communication, public voice, and human rights.
             </p>
           </motion.div>
         </div>
@@ -68,21 +68,21 @@ export default function AboutPage() {
               {/* Bio */}
               <div className="flex-1 space-y-6 text-gray-600">
                 <p className="text-lg leading-relaxed">
-                  I believe in the power of communication to create change. Whether it's helping a brand find its voice, 
+                  I believe in the power of communication to create change. Whether it&apos;s helping a brand find its voice, 
                   speaking about the challenges and opportunities of our digital age, or working with communities fighting 
-                  for their rights — I'm driven by the potential of words and stories to move people to action.
+                  for their rights — I&apos;m driven by the potential of words and stories to move people to action.
                 </p>
                 <p className="text-lg leading-relaxed">
                   My work spans three interconnected areas: strategic social media consulting, public speaking and education, 
                   and human rights advocacy. Each informs the others, creating a practice grounded in both strategy and values.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  I've worked with tech startups, NGOs, media organizations, universities, and grassroots movements. I've spoken 
-                  at conferences across Europe and the Middle East. And I've been fortunate to collaborate with brilliant people 
+                  I&apos;ve worked with tech startups, NGOs, media organizations, universities, and grassroots movements. I&apos;ve spoken 
+                  at conferences across Europe and the Middle East. And I&apos;ve been fortunate to collaborate with brilliant people 
                   working toward a more just and open society.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  When I'm not working, you'll find me reading, exploring cities, or having long conversations about ideas that matter.
+                  When I&apos;m not working, you&apos;ll find me reading, exploring cities, or having long conversations about ideas that matter.
                 </p>
               </div>
             </motion.div>
@@ -144,10 +144,10 @@ export default function AboutPage() {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Whether you're looking for strategy, a speaker, or a collaborator on meaningful work.
+              Whether you&apos;re looking for strategy, a speaker, or a collaborator on meaningful work.
             </p>
             <Link
               href="/contact"

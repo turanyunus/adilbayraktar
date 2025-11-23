@@ -67,7 +67,7 @@ export function PathPageLayout({
               href="/contact"
               className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
-              Let's Work Together
+              Let&apos;s Work Together
             </Link>
           </motion.div>
         </div>

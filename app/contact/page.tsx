@@ -44,11 +44,11 @@ export default function ContactPage() {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Let's Talk
+              Let&apos;s Talk
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Have a project in mind? Want to collaborate? Just want to say hi? 
-              I'd love to hear from you.
+              I&apos;d love to hear from you.
             </p>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    I'm interested in...
+                    I&apos;m interested in...
                   </label>
                   <select
                     id="subject"
