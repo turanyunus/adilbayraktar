@@ -5,6 +5,7 @@ import { TrendingUp, Mic, Scale, X, Award, Users, Calendar, Globe, ArrowRight, L
 import { ChoiceCard } from '@/components/ChoiceCard'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const choices = [
   {
@@ -103,6 +104,24 @@ export default function HomePage() {
             transition={{ duration: 0.7 }}
             className="max-w-4xl mx-auto text-center"
           >
+            {/* Profile Photo */}
+            <div className="flex justify-center mb-8">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl ring-4 ring-primary-100"
+              >
+                <Image
+                  src="/images/publicspeaker/IMG_4244.jpg"
+                  alt="Adil Bayraktar"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </motion.div>
+            </div>
+            
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 via-primary-700 to-gray-900 bg-clip-text text-transparent">
                 Hi, I&apos;m Adil Bayraktar.

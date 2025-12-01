@@ -49,7 +49,7 @@ export function PathPageLayout({
   return (
     <div className="animate-in fade-in duration-500">
       {/* Hero */}
-      <section className={`bg-gradient-to-b ${heroGradient} py-20 md:py-32`}>
+      <section className={`bg-gradient-to-b ${heroGradient} py-12 md:py-20`}>
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,10 +57,10 @@ export function PathPageLayout({
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
               {title}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8">
+            <p className="text-xl md:text-2xl text-gray-600 mb-6">
               {subtitle}
             </p>
             <Link
