@@ -35,8 +35,9 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors">
-            Adil Bayraktar
+          <Link href="/" className="flex flex-col hover:text-primary-600 transition-colors">
+            <span className="text-xl font-bold text-gray-900">Adil Bayraktar</span>
+            <span className="text-xs font-medium text-primary-600">Culture Broker</span>
           </Link>
           
           <div className="hidden md:flex items-center gap-8">

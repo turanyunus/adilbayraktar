@@ -11,7 +11,7 @@ export function SectionHeader({ title, subtitle, centered = false }: SectionHead
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-gray-600 max-w-2xl">
+        <p className={`text-lg text-gray-600 max-w-2xl ${centered ? 'mx-auto' : ''}`}>
           {subtitle}
         </p>
       )}

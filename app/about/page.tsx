@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
   TrendingUp,
   Mic,
@@ -54,6 +55,9 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               About Me
             </h1>
+            <p className="text-2xl md:text-3xl font-semibold text-primary-600 mb-4">
+              Culture Broker
+            </p>
             <p className="text-xl text-gray-600">
               I&apos;m Adil Bayraktar, working at the intersection of
               communication, public voice, and human rights.
@@ -73,10 +77,16 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               className="flex flex-col md:flex-row gap-12 items-start"
             >
-              {/* Photo placeholder */}
+              {/* Photo */}
               <div className="flex-shrink-0">
-                <div className="w-64 h-64 bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl flex items-center justify-center text-white text-6xl font-bold">
-                  AB
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/images/publicspeaker/IMG_4244.jpg"
+                    alt="Adil Bayraktar"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
               </div>
 

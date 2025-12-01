@@ -7,8 +7,8 @@ import { Footer } from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Adil Bayraktar - Communication, Public Voice & Human Rights',
-  description: 'Social media strategist, public speaker, and human rights advocate.',
+  title: 'Adil Bayraktar - Culture Broker | Communication, Public Voice & Human Rights',
+  description: 'Culture Broker, social media strategist, public speaker, and human rights advocate.',
 }
 
 export default function RootLayout({
