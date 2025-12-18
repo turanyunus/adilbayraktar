@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { TrendingUp, Mic, Scale, X, Award, Users, Calendar, Globe, ArrowRight, Linkedin, Twitter, Mail, Instagram } from 'lucide-react'
+import { TrendingUp, Mic, Scale, X, Award, Users, Calendar, Globe, ArrowRight, Linkedin, Mail, Instagram } from 'lucide-react'
 import { ChoiceCard } from '@/components/ChoiceCard'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -132,6 +132,9 @@ export default function HomePage() {
             </p>
             <p className="text-xl md:text-2xl text-gray-600 mb-4">
               I work at the intersection of communication, public voice, and human rights.
+            </p>
+            <p className="text-lg text-gray-500 mb-4">
+              Over 10+ years of volunteer experience with nonprofit organizations across the United States — primarily in Oklahoma, Texas, Maryland, and Pennsylvania.
             </p>
             <p className="text-lg text-gray-500 mt-8 mb-16">
               What brings you here today?
@@ -337,15 +340,6 @@ export default function HomePage() {
                 >
                   <Linkedin className="w-5 h-5" />
                   LinkedIn
-                </a>
-                <a
-                  href="https://twitter.com/adilbayraktar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all backdrop-blur-sm"
-                >
-                  <Twitter className="w-5 h-5" />
-                  Twitter / X
                 </a>
                 <a
                   href="https://www.instagram.com/adil_is5/"

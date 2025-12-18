@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   Linkedin,
-  Twitter,
   Mail,
   Send,
   Clock,
@@ -215,17 +214,6 @@ export default function ContactPage() {
                       <Linkedin className="w-5 h-5" />
                     </div>
                     <span>LinkedIn</span>
-                  </a>
-                  <a
-                    href="https://twitter.com/adilbayraktar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-gray-600 hover:text-primary-600 transition-colors group"
-                  >
-                    <div className="p-2 bg-white rounded-lg group-hover:bg-primary-50 transition-colors">
-                      <Twitter className="w-5 h-5" />
-                    </div>
-                    <span>Twitter / X</span>
                   </a>
                   <a
                     href="https://www.instagram.com/adil_is5/"

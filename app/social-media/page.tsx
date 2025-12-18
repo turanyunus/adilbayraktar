@@ -9,7 +9,6 @@ import {
   Rocket,
   GraduationCap,
   Instagram,
-  Twitter,
   Linkedin,
   Youtube,
   TrendingUp,
@@ -40,7 +39,7 @@ export default function SocialMediaPage() {
     {
       title: "Account Management",
       description:
-        "Full management of Instagram, TikTok, X (Twitter), LinkedIn, and other platforms.",
+        "Full management of Instagram, TikTok, LinkedIn, and other platforms.",
       icon: Users,
     },
     {
@@ -65,12 +64,12 @@ export default function SocialMediaPage() {
 
   const projects = [
     {
-      title: "Tech Startup Growth",
+      title: "Political & Government Work",
       description:
-        "Helped a B2B SaaS company establish their social presence from zero.",
-      goal: "Build brand awareness and generate leads",
-      approach: "LinkedIn-first strategy with thought leadership content",
-      result: "12K followers and 40% increase in qualified leads in 6 months",
+        "Worked with state representatives locally and nationally on social media strategy.",
+      goal: "Amplify political messaging and community engagement",
+      approach: "Fundraising, communication strategy, and campaign team support on state and congressional races",
+      result: "Successful campaigns at state and local level",
     },
     {
       title: "NGO Campaign",
@@ -86,8 +85,7 @@ export default function SocialMediaPage() {
         "Launched and managed social presence for an educational content creator.",
       goal: "Build engaged audience across platforms",
       approach: "Cross-platform content adaptation and community engagement",
-      result:
-        "50K followers across Instagram, TikTok, and YouTube in first year",
+      result: "Strong follower growth across Instagram, TikTok, and YouTube",
     },
   ];
 
@@ -131,7 +129,6 @@ export default function SocialMediaPage() {
       color: "from-pink-500 to-purple-600",
     },
     { name: "LinkedIn", icon: Linkedin, color: "from-blue-600 to-blue-700" },
-    { name: "Twitter / X", icon: Twitter, color: "from-gray-900 to-gray-800" },
     { name: "TikTok", icon: Youtube, color: "from-black to-gray-900" },
   ];
 

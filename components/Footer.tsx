@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail, Instagram } from 'lucide-react'
+import { Linkedin, Mail, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -20,15 +20,6 @@ export function Footer() {
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com/adilbayraktar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-gray-400 hover:text-primary-600 transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
             </a>
             <a
               href="https://www.instagram.com/adil_is5/"

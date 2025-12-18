@@ -61,14 +61,6 @@ export default function PublicSpeakingPage() {
 
   const projects = [
     {
-      title: "TEDx Oklahoma City",
-      description:
-        'Keynote presentation on human rights, refugee rights, and interfaith dialogue.',
-      goal: "Inspire audience to engage in meaningful dialogue and advocacy",
-      approach: "Personal stories combined with actionable frameworks",
-      result: "Engaged audience, meaningful connections, continued dialogue",
-    },
-    {
       title: "Pecha Kucha Events",
       description:
         "Fast-paced presentations on refugee resettlement, immigration rights, and Ahıska Turks mass exile.",
@@ -161,12 +153,6 @@ export default function PublicSpeakingPage() {
 
   const recentEvents = [
     {
-      name: "TEDx Oklahoma City",
-      location: "Oklahoma City, USA",
-      date: "Recent",
-      type: "Keynote",
-    },
-    {
       name: "Pecha Kucha",
       location: "Various Locations",
       date: "Recent",
@@ -191,12 +177,6 @@ export default function PublicSpeakingPage() {
       type: "Dialogue",
     },
     {
-      name: "TEDx Istanbul",
-      location: "Istanbul, Turkey",
-      date: "2023",
-      type: "Keynote",
-    },
-    {
       name: "Digital Rights Summit",
       location: "Berlin, Germany",
       date: "2023",
@@ -213,9 +193,9 @@ export default function PublicSpeakingPage() {
   const testimonials = [
     {
       quote:
-        "Adil brought incredible energy and insight to our event. His talk on digital storytelling resonated deeply with our audience.",
-      author: "Event Organizer",
-      event: "TEDx Istanbul",
+        "Adil has established a standard setting social media program that is helping our office connect with the community in ways we could have never predicted.",
+      author: "Del. Lesley Lopez",
+      event: "State Delegate",
     },
     {
       quote:
@@ -229,7 +209,7 @@ export default function PublicSpeakingPage() {
     <>
       <PathPageLayout
         title="Public Speaking"
-        subtitle="Engaging talks, panels, and workshops on digital communication, storytelling, media literacy, and human rights. I bring extensive experience in interfaith dialogue at churches, universities, and private organizations, along with appearances at events like Pecha Kucha and TEDx Oklahoma City. I bring insight and energy to every stage."
+        subtitle="Engaging talks, panels, and workshops on digital communication, storytelling, media literacy, and human rights. I bring extensive experience in interfaith dialogue at churches, universities, and private organizations, along with appearances at events like Pecha Kucha. I bring insight and energy to every stage."
         heroGradient="from-purple-50 to-white"
         services={services}
         projects={projects}

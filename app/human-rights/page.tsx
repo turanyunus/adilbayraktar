@@ -58,14 +58,22 @@ export default function HumanRightsPage() {
 
   const projects = [
     {
+      title: "Board of Directors - The Spero Project",
+      description:
+        "Serving on the board of directors of The Spero Project in Oklahoma City.",
+      goal: "Provide strategic guidance and support for human rights initiatives",
+      approach:
+        "Board governance, strategic planning, and community engagement",
+      result:
+        "Ongoing leadership and contribution to organizational impact",
+    },
+    {
       title: "Digital Rights Campaign",
       description:
         "Led a coalition campaign for stronger online privacy protections.",
       goal: "Raise awareness and influence policy discussions",
       approach:
         "Multi-stakeholder collaboration with NGOs, activists, and legal experts",
-      result:
-        "Campaign reached 5M people, contributed to policy review process",
     },
     {
       title: "Press Freedom Initiative",
@@ -74,7 +82,6 @@ export default function HumanRightsPage() {
       goal: "Provide legal, financial, and psychological support",
       approach:
         "Built network of lawyers, raised funds, created support systems",
-      result: "Assisted 40+ journalists, created sustainable support model",
     },
     {
       title: "Community Education Program",
