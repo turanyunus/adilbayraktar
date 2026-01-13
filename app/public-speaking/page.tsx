@@ -66,15 +66,18 @@ export default function PublicSpeakingPage() {
         "Fast-paced presentations on refugee resettlement, immigration rights, and Ahıska Turks mass exile.",
       goal: "Share important stories in an accessible format",
       approach: "20 slides, 20 seconds each - concise and impactful",
-      result: "High audience engagement, increased awareness of critical issues",
+      result:
+        "High audience engagement, increased awareness of critical issues",
     },
     {
       title: "Interfaith Dialogue - Churches",
       description:
         "Facilitated interfaith dialogue sessions at churches, building understanding between faith communities.",
       goal: "Foster mutual respect and understanding across faith traditions",
-      approach: "Open dialogue, shared experiences, and common ground exploration",
-      result: "Strengthened community bonds, ongoing relationships, positive feedback",
+      approach:
+        "Open dialogue, shared experiences, and common ground exploration",
+      result:
+        "Strengthened community bonds, ongoing relationships, positive feedback",
     },
     {
       title: "Interfaith Dialogue - Universities",
@@ -82,7 +85,8 @@ export default function PublicSpeakingPage() {
         "Speaking engagements at universities on interfaith dialogue, refugee rights, and political dialogue.",
       goal: "Educate and inspire students to engage in meaningful dialogue",
       approach: "Academic rigor combined with personal narratives",
-      result: "Student engagement, invitations for return visits, impact on campus dialogue",
+      result:
+        "Student engagement, invitations for return visits, impact on campus dialogue",
     },
     {
       title: "Refugee Resettlement Panels",
@@ -90,14 +94,16 @@ export default function PublicSpeakingPage() {
         "Panel discussions on refugee resettlement, immigration rights, and refugee advocacy.",
       goal: "Raise awareness and advocate for refugee communities",
       approach: "Collaborative panels with diverse perspectives",
-      result: "Increased community support, policy discussions, actionable outcomes",
+      result:
+        "Increased community support, policy discussions, actionable outcomes",
     },
     {
       title: "Ahıska Turks Mass Exile Discussions",
       description:
         "Presentations and discussions on the historical and contemporary impact of Ahıska Turks mass exile.",
       goal: "Preserve history and raise awareness of this important community",
-      approach: "Historical context, personal stories, and contemporary relevance",
+      approach:
+        "Historical context, personal stories, and contemporary relevance",
       result: "Documented history, community recognition, educational impact",
     },
   ];
@@ -175,18 +181,6 @@ export default function PublicSpeakingPage() {
       location: "Various Locations",
       date: "Ongoing",
       type: "Dialogue",
-    },
-    {
-      name: "Digital Rights Summit",
-      location: "Berlin, Germany",
-      date: "2023",
-      type: "Panel",
-    },
-    {
-      name: "Media Literacy Conference",
-      location: "Amsterdam, Netherlands",
-      date: "2024",
-      type: "Workshop",
     },
   ];
 
@@ -377,7 +371,20 @@ export default function PublicSpeakingPage() {
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {['4244', '4245', '4246', '4247', '4248', '4258', '4259', '4260', '4261', '4265', '4266', '4267'].map((imgNum, index) => (
+              {[
+                "4244",
+                "4245",
+                "4246",
+                "4247",
+                "4248",
+                "4258",
+                "4259",
+                "4260",
+                "4261",
+                "4265",
+                "4266",
+                "4267",
+              ].map((imgNum, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -394,7 +401,7 @@ export default function PublicSpeakingPage() {
                     onError={(e) => {
                       // Fallback if image doesn't exist
                       const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
+                      target.style.display = "none";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
