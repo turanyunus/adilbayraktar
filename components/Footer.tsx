@@ -9,6 +9,17 @@ export function Footer() {
             <p className="text-sm text-gray-600">
               © {new Date().getFullYear()} Adil Bayraktar. All rights reserved.
             </p>
+            <p className="text-sm text-gray-500 mt-2">
+              Made by{' '}
+              <a
+                href="https://wmotech.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary-600 transition-colors underline"
+              >
+                wmotech
+              </a>
+            </p>
           </div>
           
           <div className="flex gap-4">
