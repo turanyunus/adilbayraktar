@@ -213,7 +213,7 @@ export default function SocialMediaPage() {
                 Clients & Partners
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                I&apos;ve had the privilege of working with diverse organizations, public figures, artists, and athletes
+                I&apos;ve worked with elected officials and political campaigns, diverse organizations, artists, and athletes
               </p>
             </motion.div>
 
@@ -257,14 +257,6 @@ export default function SocialMediaPage() {
                   <h3 className="text-2xl font-bold text-gray-900">Political Figures</h3>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-                    <div className="font-semibold text-gray-900 text-lg">State Delegate Lesly Lopez</div>
-                    <div className="text-gray-600 text-sm mt-1">Maryland State Delegate</div>
-                  </div>
-                  <div className="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-                    <div className="font-semibold text-gray-900 text-lg">Zeeshan Hafeez</div>
-                    <div className="text-gray-600 text-sm mt-1">Texas Congress Candidate</div>
-                  </div>
                 </div>
               </motion.div>
 

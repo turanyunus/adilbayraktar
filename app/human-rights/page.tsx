@@ -68,22 +68,6 @@ export default function HumanRightsPage() {
         "Ongoing leadership and contribution to organizational impact",
     },
     {
-      title: "Digital Rights Campaign",
-      description:
-        "Led a coalition campaign for stronger online privacy protections.",
-      goal: "Raise awareness and influence policy discussions",
-      approach:
-        "Multi-stakeholder collaboration with NGOs, activists, and legal experts",
-    },
-    {
-      title: "Press Freedom Initiative",
-      description:
-        "Co-founded initiative supporting journalists facing legal harassment.",
-      goal: "Provide legal, financial, and psychological support",
-      approach:
-        "Built network of lawyers, raised funds, created support systems",
-    },
-    {
       title: "Community Education Program",
       description:
         "Developed educational program on rights and civic participation for youth.",

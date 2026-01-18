@@ -362,7 +362,7 @@ export default function HomePage() {
                   TikTok
                 </a>
                 <a
-                  href="mailto:bayraktar.adil94@gmail.com"
+                  href="mailto:Adil.Bayraktar94@gmail.com"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-all backdrop-blur-sm"
                 >
                   <Mail className="w-5 h-5" />

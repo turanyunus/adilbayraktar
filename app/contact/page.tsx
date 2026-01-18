@@ -189,11 +189,11 @@ export default function ContactPage() {
                 </h3>
                 <div className="space-y-3">
                   <a
-                    href="mailto:bayraktar.adil94@gmail.com"
+                    href="mailto:Adil.Bayraktar94@gmail.com"
                     className="flex items-center gap-3 text-gray-600 hover:text-primary-600 transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    <span>bayraktar.adil94@gmail.com</span>
+                    <span>Adil.Bayraktar94@gmail.com</span>
                   </a>
                 </div>
               </div>
@@ -283,7 +283,7 @@ export default function ContactPage() {
               {[
                 {
                   q: "What types of projects do you take on?",
-                  a: "I work with a wide range of clients including tech startups, NGOs, media organizations, universities, and grassroots movements. Whether you need social media strategy, a speaker for your event, or a collaborator on human rights work, I&apos;d love to hear about your project.",
+                  a: "I work with a wide range of clients including tech startups, NGOs, media organizations, universities, and grassroots movements. Whether you need social media strategy, a speaker for your event, or a collaborator on human rights work, I'd love to hear about your project.",
                 },
                 {
                   q: "How do you approach new projects?",
@@ -291,10 +291,10 @@ export default function ContactPage() {
                 },
                 {
                   q: "Do you work with international clients?",
-                  a: "Yes! I&apos;ve worked with clients and spoken at events across Europe, the Middle East, and beyond. Remote collaboration is seamless, and I&apos;m happy to travel for speaking engagements.",
+                  a: "Yes! I've worked with clients and spoken at events across Europe, the Middle East, and beyond. Remote collaboration is seamless, and I'm happy to travel for speaking engagements.",
                 },
                 {
-                  q: "What&apos;s your typical response time?",
+                  q: "What's your typical response time?",
                   a: "I aim to respond to all inquiries within 1-2 business days. For urgent matters, feel free to mention it in your message.",
                 },
               ].map((faq, index) => (

@@ -187,12 +187,6 @@ export default function PublicSpeakingPage() {
   const testimonials = [
     {
       quote:
-        "Adil has established a standard setting social media program that is helping our office connect with the community in ways we could have never predicted.",
-      author: "Del. Lesley Lopez",
-      event: "State Delegate",
-    },
-    {
-      quote:
         "The workshop was engaging, practical, and inspiring. Our students left with actionable strategies they could implement immediately.",
       author: "University Professor",
       event: "Journalism Workshop Series",
